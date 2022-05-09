@@ -1,0 +1,4 @@
+repository "ProjectOtter@Derebeylik@cloud"
+  path "/"
+    smartbranch "/main"    
+     
