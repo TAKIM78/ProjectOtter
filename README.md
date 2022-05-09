@@ -37,3 +37,6 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
     Kalan sprintler için tahmini puan değeri: 350 puan
 
     * Ürün için alınan referans oyun örnekleri Miro board'umuzda bulunmaktadır.
+    
+    ![Spirnt1A](/ReadMeImages/hub1.png)
+    ![Spirnt1B](/ReadMeImages/hub2.png)
