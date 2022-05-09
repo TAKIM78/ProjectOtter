@@ -41,3 +41,8 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
  ![Spirnt1A](/ReadMeImages/hub1.png)
  
  ![Spirnt1B](/ReadMeImages/hub2.png)
+ 
+  * Sprint Reiview: Alınan kararlar: oyunun arka plan hikayesi ve genel teması kararlaştırıldı. Art stili ve kullanılacak teknolojik altyapı çözümlendirildi. Sistem mimarisinin temeli atıldı.
+  * Sprint Retrospective:
+  * Günlük toplantılara ağırlık verilebilir.
+  * Görev dağılımları arasındaki ince çizginin kurulması.
