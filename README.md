@@ -51,14 +51,13 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
     Kalan sprintler için tahmini puan değeri: 161 puan
 
     * Ürün için alınan referans oyun örnekleri, oyunun senaryosu, mekan kurguları ve karakter modelleri Miro board'umuzda bulunmaktadır.
-    
- ![Sprint1C](/ReadMeImages/sprint 2 jira.jpg)
- 
- ![Spirnt1D](/ReadMeImages/sprint 2 jira2.png)
+    ![sprint 2 jira](https://user-images.githubusercontent.com/97448459/169909123-0f5c64fc-7166-40bf-ae02-99af19995143.jpg)
+    ![sprint 2 jira2](https://user-images.githubusercontent.com/97448459/169909139-7b2a8908-8cde-4225-9b49-98dae83f24d7.png)
+
  
   * Sprint Review: Alınan kararlar: Oyunun prototipinin yapımına ve senarya oluşturulmaya başlandı. Oyunun geçeceği mekanlar ve tasarlanmaya başlandı. Ana   ve yan karakterlerin modelleri ve animasyonları oluşturuldu. Oyun içi objelere, materyallere, yapılara karar verildi.
   * Sprint Retrospective:
-  * 2. sprint boyunca yapmayı hedeflediğimiz planlarımızı gerçekleştirdik. Sprint planlamamızın doğru adımlarla ilerlediğini gördük. 3.sprint için altyapı   çalışmalarına başladık. Ekip içi görev dağılımı başarı ile tamamlandı.
+  * Sprint 2 boyunca yapmayı hedeflediğimiz planlarımızı gerçekleştirdik. Sprint planlamamızın doğru adımlarla ilerlediğini gördük. 3.sprint için           altyapı   çalışmalarına başladık. Ekip içi görev dağılımı başarı ile tamamlandı.
   * Görev dağılımları arasındaki ince çizginin kurulması.
 
   * (Not: Jira panomuzda code-to-do etiketi ile gösterilen görevleri tamamladık ancak code-done yapıldığında görev silindiği için bu şekilde bırakmak         zorunda kaldık dikkatinize!)
