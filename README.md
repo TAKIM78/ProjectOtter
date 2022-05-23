@@ -51,9 +51,10 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
     Kalan sprintler için tahmini puan değeri: 161 puan
 
     * Ürün için alınan referans oyun örnekleri, oyunun senaryosu, mekan kurguları ve karakter modelleri Miro board'umuzda bulunmaktadır.
-    ![sprint 2 jira](https://user-images.githubusercontent.com/97448459/169909123-0f5c64fc-7166-40bf-ae02-99af19995143.jpg)
-    ![sprint 2 jira2](https://user-images.githubusercontent.com/97448459/169909139-7b2a8908-8cde-4225-9b49-98dae83f24d7.png)
-
+    
+    ![Sprint2A](/ReadMeImages/sprint%202%20jira.jpg)
+ 
+    ![Sprint2B](/ReadMeImages/sprint%202%20jira2.png)
  
   * Sprint Review: Alınan kararlar: Oyunun prototipinin yapımına ve senarya oluşturulmaya başlandı. Oyunun geçeceği mekanlar ve tasarlanmaya başlandı. Ana   ve yan karakterlerin modelleri ve animasyonları oluşturuldu. Oyun içi objelere, materyallere, yapılara karar verildi.
   * Sprint Retrospective:
