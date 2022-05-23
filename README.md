@@ -52,9 +52,9 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
 
     * Ürün için alınan referans oyun örnekleri, oyunun senaryosu, mekan kurguları ve karakter modelleri Miro board'umuzda bulunmaktadır.
     
-    ![Sprint2A](/ReadMeImages/sprint%202%20jira.jpg)
+  ![Sprint2A](/ReadMeImages/sprint%202%20jira.jpg)
  
-    ![Sprint2B](/ReadMeImages/sprint%202%20jira2.png)
+  ![Sprint2B](/ReadMeImages/sprint%202%20jira2.png)
  
   * Sprint Review: Alınan kararlar: Oyunun prototipinin yapımına ve senarya oluşturulmaya başlandı. Oyunun geçeceği mekanlar ve tasarlanmaya başlandı. Ana   ve yan karakterlerin modelleri ve animasyonları oluşturuldu. Oyun içi objelere, materyallere, yapılara karar verildi.
   * Sprint Retrospective:
