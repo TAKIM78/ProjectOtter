@@ -3,9 +3,9 @@ Takım 78
 
 # Ürün İle İlgili Bilgiler
 # Takım 78 Üyeleri:
-  * Scrum Master / Game Designer: Başak Haykırer
-  * Product Owner / Game Designer: Merve Çetinkaya
-  * Game Designer / Storyteller: Meral Karakoyun
+  * Scrum Master: Başak Haykırer
+  * Product Owner: Merve Çetinkaya
+  * Level Designer: Meral Karakoyun
   * Developers:
     * Başak Haykırer
     * Batuhan Avcı
@@ -54,7 +54,7 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
     
  ![Spirnt2A](/ReadMeImages/sprint 2 jira.jpg)
  
- ![Spirnt2B](/ReadMeImages/sprint 2 jira2.jpg)
+ ![Spirnt2B](/ReadMeImages/sprint 2 jira2.png)
  
   * Sprint Review: Alınan kararlar: Oyunun prototipinin yapımına ve senarya oluşturulmaya başlandı. Oyunun geçeceği mekanlar ve tasarlanmaya başlandı. Ana   ve yan karakterlerin modelleri ve animasyonları oluşturuldu. Oyun içi objelere, materyallere, yapılara karar verildi.
   * Sprint Retrospective:
