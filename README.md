@@ -3,9 +3,9 @@ Takım 78
 
 # Ürün İle İlgili Bilgiler
 # Takım 78 Üyeleri:
-  * Scrum Master: Başak Haykırer
-  * Product Owner: Merve Çetinkaya
-  * Level Designer: Meral Karakoyun
+  * Scrum Master / Game Designer: Başak Haykırer
+  * Product Owner / Game Designer: Merve Çetinkaya
+  * Game Designer / Storyteller: Meral Karakoyun
   * Developers:
     * Başak Haykırer
     * Batuhan Avcı
