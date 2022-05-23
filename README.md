@@ -52,11 +52,13 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
 
     * Ürün için alınan referans oyun örnekleri, oyunun senaryosu, mekan kurguları ve karakter modelleri Miro board'umuzda bulunmaktadır.
     
- ![Spirnt1A](/ReadMeImages/hub1.png)
+ ![Spirnt2A](/ReadMeImages/sprint 2 jira.jpg)
  
- ![Spirnt1B](/ReadMeImages/hub2.png)
+ ![Spirnt2B](/ReadMeImages/sprint 2 jira2.jpg)
  
   * Sprint Review: Alınan kararlar: Oyunun prototipinin yapımına ve senarya oluşturulmaya başlandı. Oyunun geçeceği mekanlar ve tasarlanmaya başlandı. Ana   ve yan karakterlerin modelleri ve animasyonları oluşturuldu. Oyun içi objelere, materyallere, yapılara karar verildi.
   * Sprint Retrospective:
   * 2. sprint boyunca yapmayı hedeflediğimiz planlarımızı gerçekleştirdik. Sprint planlamamızın doğru adımlarla ilerlediğini gördük. 3.sprint için altyapı   çalışmalarına başladık. Ekip içi görev dağılımı başarı ile tamamlandı.
   * Görev dağılımları arasındaki ince çizginin kurulması.
+
+  * (Not: Jira panomuzda code-to-do etiketi ile gösterilen görevleri tamamladık ancak code-done yapıldığında görev silindiği için bu şekilde bırakmak         zorunda kaldık dikkatinize!)
