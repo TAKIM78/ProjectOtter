@@ -55,6 +55,10 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
   ![Sprint2A](/ReadMeImages/sprint%202%20jira.jpg)
  
   ![Sprint2B](/ReadMeImages/sprint%202%20jira2.png)
+  
+  ![Sprint2C](/ReadMeImages/board1.png)
+  
+  ![Sprint2D](/ReadMeImages/board2.png)
  
   * Sprint Review: Alınan kararlar: Oyunun prototipinin yapımına ve senarya oluşturulmaya başlandı. Oyunun geçeceği mekanlar ve tasarlanmaya başlandı. Ana   ve yan karakterlerin modelleri ve animasyonları oluşturuldu. Oyun içi objelere, materyallere, yapılara karar verildi.
   * Sprint Retrospective:
@@ -62,3 +66,13 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
   * Görev dağılımları arasındaki ince çizginin kurulması.
 
   * (Not: Jira panomuzda code-to-do etiketi ile gösterilen görevleri tamamladık ancak code-done yapıldığında görev silindiği için bu şekilde bırakmak         zorunda kaldık dikkatinize!)
+
+  * Ürün Durumu Ekran Görüntüleri:
+  
+  ![Ürün2A](/ReadMeImages/product0.jpg)
+ 
+  ![Ürün2B](/ReadMeImages/product1.png)
+  
+  ![Ürün2C](/ReadMeImages/product2.png)
+  
+  ![Ürün2D](/ReadMeImages/product3.png)
