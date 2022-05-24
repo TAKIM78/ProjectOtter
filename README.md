@@ -57,7 +57,6 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
   ![Sprint2B](/ReadMeImages/sprint%202%20jira2.png)
   
   ![Sprint2C](/ReadMeImages/board1.png)
-  
   ![Sprint2D](/ReadMeImages/board2.png)
  
   * Sprint Review: Alınan kararlar: Oyunun prototipinin yapımına ve senarya oluşturulmaya başlandı. Oyunun geçeceği mekanlar ve tasarlanmaya başlandı. Ana   ve yan karakterlerin modelleri ve animasyonları oluşturuldu. Oyun içi objelere, materyallere, yapılara karar verildi.
