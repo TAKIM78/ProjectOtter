@@ -87,7 +87,7 @@ CALYPTO
    * Görev dağılımları arasındaki ince çizgi ise kurulamadı.
 
 * Ürün Durumu Ekran Görüntüleri:
-  
+  :
   
   ![Ürün3A](/ReadMeImages/hubi1.jpg)
  
