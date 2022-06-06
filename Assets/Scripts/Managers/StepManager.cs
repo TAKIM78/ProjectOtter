@@ -39,8 +39,9 @@ public class StepManager : MonoBehaviour
 
     void DoStep()
     {
-        if (isForeground)
-            OnStepProgress();
+        //if (isForeground)
+        //    OnStepProgress();
+        OnStepProgress();
     }
 
     void ProcessOfflineSteps(int offlineSteps)

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CameraMoveAndZoom : MonoBehaviour
 {
-    [SerializeField] float zoomOutMin, zoomOutMax, speedModifier;
+    [SerializeField] float zoomOutMin, zoomOutMax;
+    [SerializeField] GameObject lastRoom;
+    private float speedModifier = 0.02f;
     private Camera cameraMain;
     private Touch touch;
 
@@ -17,6 +19,7 @@ public class CameraMoveAndZoom : MonoBehaviour
     {
         MoveCamera();
         ZoomCamera();
+        FixSpeedModifier();
     }
 
     private void MoveCamera()
@@ -28,6 +31,7 @@ public class CameraMoveAndZoom : MonoBehaviour
             if (touch.phase == TouchPhase.Moved)
                 fixPosition = new Vector3(-touch.deltaPosition.x * speedModifier, -touch.deltaPosition.y * speedModifier, 0f);
             gameObject.transform.position += fixPosition;
+            Camera.main.transform.position = ClampCamera(Camera.main.transform.position);
         }
     }
 
@@ -49,8 +53,43 @@ public class CameraMoveAndZoom : MonoBehaviour
         }
     }
 
-    void Zoom(float increment)
+    private void Zoom(float increment)
     {
         Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax);
+        Camera.main.transform.position = ClampCamera(Camera.main.transform.position);
+    }
+
+    float tempSpeedMod = 0;
+    private void FixSpeedModifier()
+    {
+        if (speedModifier != 0.01f && Camera.main.orthographicSize < 6)
+        {
+            speedModifier = 0.01f;
+            tempSpeedMod = speedModifier;
+        }
+        else if(speedModifier!= 0.02f && Camera.main.orthographicSize >= 6)
+        {
+            speedModifier = 0.02f;
+            tempSpeedMod = speedModifier;
+        }
+    }
+
+    private Vector3 ClampCamera(Vector3 targetPos)
+    {
+        float camHeight = Camera.main.orthographicSize;
+        float camWidth = Camera.main.orthographicSize * Camera.main.aspect;
+
+        float minX = 0f + camWidth;
+        float maxX = 100f - camWidth;
+        float minY = -17 + camHeight;
+        float maxY = 31 - camHeight;
+
+        if (lastRoom.GetComponent<Room>().isBuilt)
+            maxX = 115f - camWidth;
+
+        float newX = Mathf.Clamp(targetPos.x, minX, maxX);
+        float newY = Mathf.Clamp(targetPos.y, minY, maxY);
+
+        return new Vector3(newX, newY, targetPos.z);
     }
 }

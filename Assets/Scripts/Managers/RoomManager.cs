@@ -9,17 +9,17 @@ public class RoomManager : MonoBehaviour
     [SerializeField]
     GameObject roomShadowObject;
 
-    [SerializeField]
-    private int roomSizeX = 5; //Odaların boyutları aynı, ve bir odanın boyutları böyle.
-    [SerializeField]
-    private int roomSizeY = 3;
+    //[SerializeField]
+    //private int roomSizeX = 5; //Odaların boyutları aynı, ve bir odanın boyutları böyle.
+    //[SerializeField]
+    //private int roomSizeY = 3;
 
     [SerializeField]
     public int mapSizeX; //Tüm alanın boyutu.
     [SerializeField]
     public int mapSizeY;
 
-    private List<Room> rooms = new List<Room>();
+    public List<Room> rooms = new List<Room>();
 
     DepotManager depotManager;
 
@@ -33,12 +33,29 @@ public class RoomManager : MonoBehaviour
         return rooms.Where(a => a.type == type).FirstOrDefault();
     }
 
+    public Room GetRoomByNumber(int number)
+    {
+        return rooms[number - 1];
+    }
+
+    public List<Room> GetAllRooms()
+    {
+        return rooms;
+    }
+
+    public GameObject GetClickedRoomObject(GameObject clickedObject)
+    {
+        return GetRoomObjectAsParent(clickedObject);
+    }
+
     /// <summary>
     /// Yeni bir oda inşa eder (odayı aktive eder). Başarılıysa true, değilse false döner.
     /// </summary>
-    /// <param name="roomObject">İnşa edilecek odanın gameObjesi.</param>
-    public bool BuildNewRoom(GameObject roomObject)
+    /// <param name="clickedObject">İnşa edilecek odanın içerisinde bir yerde tıklanan gameObje..</param>
+    public bool BuildNewRoom(GameObject clickedObject)
     {
+        GameObject roomObject = GetRoomObjectAsParent(clickedObject);
+
         Room room = roomObject.GetComponent<Room>();
         Dictionary<ProductType, int> buildCost = roomObject.GetComponent<RoomBuildCost>().GetBuildCost();
 
@@ -57,7 +74,38 @@ public class RoomManager : MonoBehaviour
         if (room.roomToTheLeft != null) //Solundaki
             DeShadowizeRoom(room.roomToTheLeft);
 
+        if (roomObject.transform.name == "Room4")
+            DeShadowizeRoom(rooms[4].gameObject);
+        if (roomObject.transform.name == "Room8")
+            DeShadowizeRoom(rooms[8].gameObject);
+
         return true;
+    }
+
+    GameObject GetRoomObjectAsParent(GameObject childObject)
+    {
+        //Doğru Room parentını bulmalıyız.
+        GameObject currentParent = childObject;
+        if (currentParent.GetComponent<Room>() == null) //Eğerki tıklanan obje Room Ana Objesi değilse.
+        {
+            int counter = 0;
+            while (true)
+            {
+                if (currentParent.transform.parent != null)
+                    currentParent = childObject.transform.parent.gameObject;
+
+                if (currentParent.GetComponent<Room>() != null) //Eğer room ana objesini bulmuşsak.
+                    break;
+
+                counter++;
+                if (counter == 1000)
+                {
+                    return null;
+                }
+            }
+        }
+
+        return currentParent;
     }
 
     void ShadowizeRoom(GameObject roomObject)
@@ -72,11 +120,21 @@ public class RoomManager : MonoBehaviour
         Room room = roomObject.GetComponent<Room>();
         Destroy(room.shadowObject);
 
-        //Bu odanın komşuları tıklanabilir olmalı. O yüzden shadowObjelerinin box colliderı ölür.
+        //Bu odanın komşuları tıklanabilir olmalı.O yüzden shadowObjelerinin box colliderı ölür.
         if (room.roomToTheLeft != null)
-            Destroy(room.roomToTheLeft.GetComponent<Room>().shadowObject.GetComponent<BoxCollider>());
+        {
+            if (room.roomToTheLeft.GetComponent<Room>().shadowObject != null)
+                Destroy(room.roomToTheLeft.GetComponent<Room>().shadowObject.GetComponent<BoxCollider>());
+        }
         if (room.roomToTheRight != null)
-            Destroy(room.roomToTheRight.GetComponent<Room>().shadowObject.GetComponent<BoxCollider>());
+        {
+            if (room.roomToTheRight.GetComponent<Room>().shadowObject != null)
+                Destroy(room.roomToTheRight.GetComponent<Room>().shadowObject.GetComponent<BoxCollider>());
+        }
+        //if (room.roomToTheLeft != null)
+        //    Destroy(room.roomToTheLeft.GetComponent<Room>().shadowObject);
+        //if (room.roomToTheRight != null)
+        //    Destroy(room.roomToTheRight.GetComponent<Room>().shadowObject);
     }
 
     void Initialization()
@@ -92,9 +150,11 @@ public class RoomManager : MonoBehaviour
     private void Start()
     {
         //Oda listesini doldur.
+        PopulateRoomsList();
         foreach (var roomObject in GameObject.FindGameObjectsWithTag("Room"))
         {
-            rooms.Add(roomObject.GetComponent<Room>());
+            int roomNumber = Int32.Parse(roomObject.transform.name.Replace("Room", ""));
+            rooms[roomNumber - 1] = roomObject.GetComponent<Room>();
         }
 
         //Tüm odaları gölgele.
@@ -108,6 +168,15 @@ public class RoomManager : MonoBehaviour
         {
             if (room.isBuilt)
                 DeShadowizeRoom(room.gameObject);
+        }
+    }
+
+    void PopulateRoomsList()
+    {
+        int roomsCount = GameObject.FindGameObjectsWithTag("Room").Length;
+        for (int i = 0; i < roomsCount; i++)
+        {
+            rooms.Add(null);
         }
     }
 }

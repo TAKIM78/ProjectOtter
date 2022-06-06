@@ -4,6 +4,14 @@ using UnityEngine;
 
 public enum ProductType : byte
 {
-    IronOre,
-    IronBar
+    Electronics,
+    Uranium,
+    Plastics,
+    Steel,
+    Aluminium,
+    Copper,
+    Ceramic,
+    Glass,
+    Textile,
+    Seed
 }

@@ -20,6 +20,9 @@ public class RoomProduction : MonoBehaviour
 
     DepotManager depotManager;
     Room room;
+    RoomWorkers roomWorkers;
+
+
 
     /// <summary>
     /// Float (0-1 arası) cinsinden üretimin ne kadarının tamamlandığını döner.
@@ -74,7 +77,9 @@ public class RoomProduction : MonoBehaviour
         }
 
         //TODO: Change when room levels.
-        stepAccumulation++;
+        stepAccumulation += roomWorkers.GetAssignedWorkerCount();
+        //stepAccumulation++;
+
 
         if (stepAccumulation >= productionStepCount)
         {
@@ -120,5 +125,6 @@ public class RoomProduction : MonoBehaviour
     {
         depotManager = GameObject.Find("Managers").GetComponent<DepotManager>();
         room = gameObject.GetComponent<Room>();
+        roomWorkers = gameObject.GetComponent<RoomWorkers>();
     }
 }

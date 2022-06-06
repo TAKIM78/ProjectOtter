@@ -8,6 +8,8 @@ public class RoomBuildCost : MonoBehaviour
     public List<int> costTypeCounts;
 
 
+    //[SerializeField] List<ProductInfoScriptableObject> costs;
+
     /// <summary>
     /// Dictionary cinsinden odanın satın alma/inşa etme maliyetini döner.
     /// </summary>

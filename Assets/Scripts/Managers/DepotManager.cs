@@ -14,7 +14,7 @@ public class DepotManager : MonoBehaviour
     /// <returns></returns>
     public Dictionary<ProductType, int> GetProductInventory()
     {
-        return products;
+        return products;        
     }
 
     /// <summary>
@@ -98,7 +98,8 @@ public class DepotManager : MonoBehaviour
 
         foreach (ProductType type in Enum.GetValues(typeof(ProductType)))
         {
-            products.Add(type, 0);
+            products.Add(type, UnityEngine.Random.Range(10, 123));
+            //products.Add(type, 0);
         }
     }
 

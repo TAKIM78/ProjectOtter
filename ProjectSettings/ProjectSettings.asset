@@ -155,6 +155,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.ProjectOtter
+    Standalone: com.DefaultCompany.ProjectOtter
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -776,7 +777,14 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -790,11 +798,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: f8b6c1aa-4866-4f5c-ad57-4412eca2b48c
+  cloudProjectId: f8573467-7aaa-4e54-9726-9996f97e8c90
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: ProjectOtter
+  organizationId: team-78
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

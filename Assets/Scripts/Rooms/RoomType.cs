@@ -8,6 +8,15 @@ public enum RoomType : byte
 {
     DEBUGDELETETHIS,
     Depot,
-    IronMine,
-    IronSmelter
+    RobotProductionLab,
+    ElectronicsProductionLab,
+    UraniumLab,
+    PlasticsLab,
+    SteelLab,
+    AluminiumLab,
+    CopperLab,
+    CeramicsAtelier,
+    GlassAtelier,
+    TextileAtelier,
+    SeedLab
 }

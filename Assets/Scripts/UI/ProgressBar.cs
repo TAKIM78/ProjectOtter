@@ -14,12 +14,18 @@ public class ProgressBar : MonoBehaviour
     private Image barImage;
     private float roomWidth, roomHeight;
 
+    Room myRoom;
+    RoomProduction myRoomProduction;
+
     private void Start()
     {
-        createdCanvas = Instantiate(canvasPrefab, transform.position + Vector3.back, Quaternion.identity).GetComponent<Canvas>();
+        createdCanvas = Instantiate(canvasPrefab, transform.position + Vector3.back + new Vector3(7.65f , 0.5f, 0f), Quaternion.identity).GetComponent<Canvas>();
         CanvasSettings();
         barImage = createdCanvas.transform.GetChild(0).transform.GetComponent<Image>();
         barImage.transform.localScale = new Vector3(0.5f, 0.1f, 1f);
+
+        myRoom = gameObject.GetComponent<Room>();
+        myRoomProduction = gameObject.GetComponent<RoomProduction>();
     }
 
     private void Update()
@@ -42,25 +48,21 @@ public class ProgressBar : MonoBehaviour
 
     private void FillProgressBar()
     {
-        //if (!gameObject.GetComponent<Room>().isBuilt)//Batu: oda inşa halde değilse progress bar öylesine doluyor. Onun yerine komple disable edilebilir.
-        //    barImage.fillAmount += speedOfProgressBar * Time.deltaTime; //Burası Emirhan'ın orijinal kısmı.
-        //if (gameObject.GetComponent<Room>().isBuilt && gameObject.GetComponent<Room>().type != RoomType.Depot)//Batu: oda inşa edilmiş ve depo değilse.Depo üretim yapmıyor.
-        //    barImage.fillAmount = gameObject.GetComponent<RoomProduction>().GetProductionCompletionPercentage();//Batu: RoomProduction'dan üretiminin ne kadarının tamamlandığı bilgisi elde edilir.
+        if (myRoom.isBuilt)
+        {
+            float completionPercantage = myRoomProduction.GetProductionCompletionPercentage();
 
-        float completionPercantage = 0f;
-        
-        if(gameObject.GetComponent<Room>().isBuilt && barImage.fillAmount <= gameObject.GetComponent<RoomProduction>().GetProductionCompletionPercentage())
-            barImage.fillAmount += speedOfProgressBar * Time.deltaTime;
-
-        if (gameObject.GetComponent<Room>().isBuilt && barImage.fillAmount > 0f && gameObject.GetComponent<RoomProduction>().GetProductionCompletionPercentage() == 0f)
-            barImage.fillAmount += speedOfProgressBar * Time.deltaTime;
+            if (barImage.fillAmount <= completionPercantage)
+                barImage.fillAmount += speedOfProgressBar * Time.deltaTime;
+            else if (barImage.fillAmount > 0 && completionPercantage == 0f)
+                barImage.fillAmount += speedOfProgressBar * Time.deltaTime;
+        }
 
         if (barImage.fillAmount == 1f)
             barImage.fillAmount = 0f;
         else if (barImage.fillAmount >= 0.99f)
         {
             barImage.fillAmount = 1f;
-            //Barýn dolduðu an burasý malzeme üretimi burada tam bar dolduðunda yapýlacak veya artacak!
         }
     }
 }

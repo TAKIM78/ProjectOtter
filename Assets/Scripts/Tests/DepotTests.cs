@@ -11,7 +11,7 @@ public class DepotTests : MonoBehaviour
     {
         depotManager = GameObject.Find("Managers").GetComponent<DepotManager>();
 
-        //PushProducts();
+        //Invoke("PushProducts", 5f);
         //PullProduct();
     }
 
@@ -19,7 +19,7 @@ public class DepotTests : MonoBehaviour
     {
         Debug.Log("Before push: " + depotManager.DebugInventoryContents());
         Dictionary<ProductType, int> pushes = new();
-        pushes.Add(ProductType.IronOre, 10);
+        pushes.Add(ProductType.Steel, 10);
         depotManager.PushProducts(pushes);
         Debug.Log("After push: " + depotManager.DebugInventoryContents());
     }
@@ -28,7 +28,7 @@ public class DepotTests : MonoBehaviour
     {
         Debug.Log("Before pull: " + depotManager.DebugInventoryContents());
         Dictionary<ProductType, int> pulls = new();
-        pulls.Add(ProductType.IronOre, 15);
+        pulls.Add(ProductType.Steel, 15);
         var result = depotManager.PullProducts(pulls);
         Debug.Log($"After pull({result}): " + depotManager.DebugInventoryContents());
     }
