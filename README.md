@@ -3,19 +3,17 @@ Takım 78
 
 # Ürün İle İlgili Bilgiler
 # Takım 78 Üyeleri:
-  * Scrum Master: Başak Haykırer
+  * Scrum Master, Game Designer: Başak Haykırer
+  * Story Teller, Game Designer: Meral Karakoyun
+  * Developer: Batuhan Avcı
+  * Developer, Level Designer: Emirhan Soğukpınar
   * Product Owner: Merve Çetinkaya
-  * Level Designer: Meral Karakoyun
-  * Developers:
-    * Başak Haykırer
-    * Batuhan Avcı
-    * Emirhan Soğukpınar
 
 # Ürün İsmi
-Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
+CALYPTO 
 
 # Ürün Açıklaması
-  * Post-apokaliptik evrende geçen management tarzında, ana karakterin etrafında şekillenen ve karakterin kaynak yönetimi ile kendine oluşturduğu yer altı sığınağında makus talihinden kurtulmaya çalışmasının öyküsü.
+  * Post-apokaliptik evrende geçen management tarzında, ana karakter Charlie'nin etrafında şekillenen ve karakterin kaynak yönetimi ile kendine oluşturduğu yer altı sığınağında makus talihinden kurtulmaya çalışmasının öyküsü.
 
 # Ürün Özellikleri
   * Kaynak yönetimi
@@ -30,11 +28,11 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
 
 # İlgili Linkler
     * Miro: https://miro.com/app/board/uXjVO690MPQ=/
-    * Jira: https://takim78.atlassian.net/jira/software/projects/OTTER/boards/1
+    * Jira: https://takim78.atlassian.net/jira/software/projects/OTTER/boards/1 (Sprint 1 ve Sprint 2 bilgileri Jira'da, Sprint 3 bilgileri Miro'da bulunmaktadır)
 
 # Sprint 1
     * Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
-    Kalan sprintler için tahmini puan değeri: 350 puan
+    Kalan sprintler için tahmini puan değeri: 400 puan
 
     * Ürün için alınan referans oyun örnekleri Miro board'umuzda bulunmaktadır.
     
@@ -48,7 +46,7 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
   * Görev dağılımları arasındaki ince çizginin kurulması.
 # Sprint 2
     * Sprint içinde tamamlanması tahmin edilen puan: 200 Puan
-    Kalan sprintler için tahmini puan değeri: 161 puan
+    Kalan sprintler için tahmini puan değeri: 200 puan
 
     * Ürün için alınan referans oyun örnekleri, oyunun senaryosu, mekan kurguları ve karakter modelleri Miro board'umuzda bulunmaktadır.
     
@@ -75,3 +73,15 @@ Project Otter (piyasa ismi sonra kararlaştırılacaktır.)
   ![Ürün2C](/ReadMeImages/product2.png)
   
   ![Ürün2D](/ReadMeImages/product3.png)
+  
+ 
+ 
+ # Sprint 3
+     * Sprint içinde tamamlanan puan: 216 Puan
+     * Sprintler için total puan değeri: 500 puan
+     
+     * Sprint Review: Alınan kararlar: Oyunun senaryosu tamamlanarak; oyun sahnelerinin tasarımları yapıldı. Sahne yerleşimleri kararlaştırılan açılış sıralarına göre düzenlendi ve 3 boyutlu model yine bu sıraya göre oluşturuldu. Bu amaç doğrultusunda oyunun geçeceği mekanların tasarlanabilmesi için ihtiyaç olunacak tüm materyallere ait kararlar alındı. Başlanan ana ve yan karakterlerin modelleri conceptimize uygun bulunmayarak, hazır assetler üzerinden yeni bir "ana ve yan karakterler çalışması" yapılarak oyuna entegre edildi. Bir önceki sprintte seçilen objeler ve materyallerle ilgili oyuna uyumluluğu gözönünde bulundurularak ciddi revizeler yapıldı. Alınan tüm bu kararlar doğrultusunda level designa başlandı, metaryal laboratuvar ve atölyeleri niteliğine uygun olarak dekore edildi. Mekanların karakterlerinin daha doğru yansıtılabilmesi ve tasarlanmak istenen ortamın habitatına uygunluğunun oluşabilmesi için loş ve karanlık bir aydınlatma sistemi getirilmesine karar verildi. Işıklandırma detayları seçilerek; oyuna entegrasyonu sağlandı. Ana ve yan karakterlerimiz olan robot ekibimizin animasyonları tamamlandı. Oyun içi düzenlemelere devam edilerek UI çalışması yapıldı, hem mekanlar için hem de butonlar için ikonlar tasarlandı. 
+     
+   * Sprint Retrospective:
+   * Sprint 3 boyunca yapmayı hedeflediğimiz planlarımızın neredeyse tamamını gerçekleştirerek, başarılı bir şekilde oyunumuzu tamamladık. Her yeni gün beyin fırtınalarımızdan beslenen macera dolu bir serüvendi, her adımından keyif alarak ilerledik. Aldığımız kararların tamamını aktif üyelerimizin oylamasına sunarak aldık ve bir takım çalışması oluşturabildik.
+   * Görev dağılımları arasındaki ince çizgi ise kurulamadı.
