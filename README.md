@@ -79,6 +79,7 @@ CALYPTO
  # Sprint 3
      * Sprint içinde tamamlanan puan: 216 Puan
      * Sprintler için total puan değeri: 500 puan
+     * Sprint 3 Board'umuz Miro'ya eklenmiştir!
      
    * Sprint Review: Alınan kararlar: Oyunun senaryosu tamamlanarak; oyun sahnelerinin tasarımları yapıldı. Sahne yerleşimleri kararlaştırılan açılış sıralarına göre düzenlendi ve 3 boyutlu model yine bu sıraya göre oluşturuldu. Bu amaç doğrultusunda oyunun geçeceği mekanların tasarlanabilmesi için ihtiyaç olunacak tüm materyallere ait kararlar alındı. Başlanan ana ve yan karakterlerin modelleri conceptimize uygun bulunmayarak, hazır assetler üzerinden yeni bir "ana ve yan karakterler çalışması" yapılarak oyuna entegre edildi. Bir önceki sprintte seçilen objeler ve materyallerle ilgili oyuna uyumluluğu gözönünde bulundurularak ciddi revizeler yapıldı. Alınan tüm bu kararlar doğrultusunda level designa başlandı, metaryal laboratuvar ve atölyeleri niteliğine uygun olarak dekore edildi. Mekanların karakterlerinin daha doğru yansıtılabilmesi ve tasarlanmak istenen ortamın habitatına uygunluğunun oluşabilmesi için loş ve karanlık bir aydınlatma sistemi getirilmesine karar verildi. Işıklandırma detayları seçilerek; oyuna entegrasyonu sağlandı. Ana ve yan karakterlerimiz olan robot ekibimizin animasyonları tamamlandı. Oyun içi düzenlemelere devam edilerek UI çalışması yapıldı, hem mekanlar için hem de butonlar için ikonlar tasarlandı. 
      
@@ -86,8 +87,7 @@ CALYPTO
    * Sprint 3 boyunca yapmayı hedeflediğimiz planlarımızın neredeyse tamamını gerçekleştirerek, başarılı bir şekilde oyunumuzu tamamladık. Her yeni gün beyin fırtınalarımızdan beslenen macera dolu bir serüvendi, her adımından keyif alarak ilerledik. Aldığımız kararların tamamını aktif üyelerimizin oylamasına sunarak aldık ve bir takım çalışması oluşturabildik.
    * Görev dağılımları arasındaki ince çizgi ise kurulamadı.
 
-* Ürün Durumu Ekran Görüntüleri:
-  :
+* Sprint:  
   
   ![Ürün3A](/ReadMeImages/sprint1.png)
  
@@ -95,10 +95,10 @@ CALYPTO
   
   ![Ürün3C](/ReadMeImages/sprint3.png)
   
+* Ürün Görselleri 
+  
   ![Ürün3A](/ReadMeImages/hubi1.png)
  
   ![Ürün3B](/ReadMeImages/hubi2.png)
   
   ![Ürün3C](/ReadMeImages/hubi3.png)
-
-  
