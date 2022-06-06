@@ -95,4 +95,4 @@ CALYPTO
   
   ![Ürün3C](/ReadMeImages/hubi3.png)
 
-  ![ÜrünSprint3Board](/ReadMeImages/SPRINT 3.png)
+  ![Ürün3D](/ReadMeImages/SPRINT 3.png)
